@@ -16,7 +16,7 @@ task CountMotif {
     File FASTA_input
   }
   command <<<
-    COMMAND GOES HERE
+    python3 /count_patterns.py -i ~{FASTA_input} > counts.txt
   >>>
   output {
     File final_count = "counts.txt"
