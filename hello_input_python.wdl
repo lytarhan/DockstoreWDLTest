@@ -17,7 +17,7 @@ task WriteGreeting {
     String name_for_greeting
   }
   command <<<
-    python3 /hello_input_Python.py -i ~{name_for_greeting} > greeting.txt
+    python3 /helloInput.py -i ~{name_for_greeting} > greeting.txt
   >>>
   output {
     File Greeting_output = "greeting.txt"
