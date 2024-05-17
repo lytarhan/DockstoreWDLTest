@@ -23,7 +23,7 @@ task WriteGreeting {
     File Greeting_output = "greeting.txt"
   }
   runtime {
-    docker: "ltarhan/pythontest-04232024"
+    docker: "ltarhan/helloinputpython"
   }
 }
     
