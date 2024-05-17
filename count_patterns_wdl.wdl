@@ -22,7 +22,7 @@ task CountMotif {
     File final_count = "counts.txt"
   }
   runtime {
-    docker: "ltarhan/fastacounts-test"
+    docker: "ltarhan/fastacountspython"
   }
 }
     
